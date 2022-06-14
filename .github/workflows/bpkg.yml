@@ -1,0 +1,23 @@
+name: bpkg repository
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_OWNER: ${{ secrets.GH_USERNAME }}
+      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: BPKG Repository
+        uses: rafaelcalleja/bpkg-action@0.0.1
+      - name: Bump Deps
+        run: |
+          git add -A
+          (git commit -m "bump deps" && git push) || true

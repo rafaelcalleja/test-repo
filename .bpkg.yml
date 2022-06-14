@@ -1,0 +1,3 @@
+bpkg:
+  - package: rafaelcalleja/assert.sh:v1.1
+    installPath: deps/
