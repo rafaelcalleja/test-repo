@@ -1,3 +1,9 @@
 bpkg:
   - package: rafaelcalleja/assert.sh:v1.1
     installPath: deps/
+    package_json: |
+      {
+        "name": "assert",
+        "version": "v1.1",
+        "scripts": [ "package.json" ]
+      }
