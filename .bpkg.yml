@@ -5,5 +5,5 @@ bpkg:
       {
         "name": "assert",
         "version": "v1.1",
-        "scripts": [ "package.json" ]
+        "scripts": [ "package.json" ] 
       }
