@@ -14,5 +14,5 @@ bpkg:
       {
         "name": "repository-templates",
         "version": "0.0.76",
-        "files": [ "src/precommit/.pre-commit-config.yaml" ] 
+        "files": [ "src/pre-commit/.pre-commit-config.yaml" ] 
       }
