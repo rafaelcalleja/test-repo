@@ -1,5 +1,5 @@
 {
-  "name": "assert",
-  "version": "v1.1",
-  "scripts": [ "package.json" ] 
+  "name": "repository-templates",
+  "version": "0.0.76",
+  "files": [ "src/pre-commit/.pre-commit-config.yaml" ] 
 }

@@ -1,0 +1,41 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^dependency-matrix/.*.md$
+      - id: end-of-file-fixer
+      - id: check-json
+      - id: detect-private-key
+      - id: mixed-line-ending
+      - id: check-merge-conflict
+  - repo: https://github.com/Dokify/pre-commit-hooks
+    rev: v0.0.5
+    hooks:
+      - id: git-fetch-tags
+      - id: check-docker
+      - id: docker-php-cs-fixer
+        verbose: true
+      - id: docker-phpcs
+        verbose: true
+      - id: docker-php-stan
+        verbose: true
+      - id: docker-php-lint
+        verbose: true
+      - id: docker-phpmd
+        args:
+          [ 'ansi', 'codesize,controversial,phpmd/custom-ruleset.xml' ]
+        verbose: true
+      - id: docker-hadolint
+        verbose: true
+      - id: docker-markdownlint
+        exclude: ^dependency-matrix/.*.md$
+      - id: docker-shell-lint
+      - id: docker-shell-shfmt
+      - id: docker-prettier
+        verbose: true
+        exclude: ^dependency-matrix/.*.md$|^composer.json$
+      - id: docker-echo-file
+        verbose: true
+        stages: [manual]
+      - id: docker-tag-database
