@@ -7,3 +7,12 @@ bpkg:
         "version": "v1.1",
         "scripts": [ "package.json" ] 
       }
+  - package: Dokify/repository-templates:0.0.76
+    installPath: deps/
+    token: "${GH_TOKEN}"
+    package_json: |
+      {
+        "name": "repository-templates",
+        "version": "0.0.76",
+        "files": [ "src/precommit/.pre-commit-config.yaml" ] 
+      }
