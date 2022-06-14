@@ -19,5 +19,5 @@ jobs:
         uses: rafaelcalleja/bpkg-action@0.0.1
       - name: Bump Deps
         run: |
-          git add -A
+          git add -f deps
           (git commit -m "bump deps" && git push) || true
