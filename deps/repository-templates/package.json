@@ -1,0 +1,39 @@
+{
+  "name": "repository-templates",
+  "version": "0.0.76",
+  "description": "Repository Templates",
+  "global": false,
+  "repo": "dokify/repository-templates",
+  "deps": [
+    "lehmannro/assert.sh@v1.1"
+  ],
+  "files": [
+    "src/pre-commit/phpmd/custom-ruleset.xml",
+    "src/mks/docker-credentials.mk",
+    "src/mks/docker-compose.mk",
+    "src/mks/docker-local.mk",
+    "src/mks/github-credentials.mk",
+    "src/mks/gcp-credentials.mk",
+    "src/mks/common.mk",
+    "src/mks/composer.mk",
+    "src/mks/credentials.mk",
+    "src/mks/vault.mk",
+    "src/mks/go-dokify.mk"
+  ],
+  "scripts": [
+    "src/scripts/go-dokify-linux",
+    "src/scripts/config-darwin.json",
+    "src/scripts/docker-compose.sh",
+    "src/scripts/go-dokify-downloader-linux",
+    "src/scripts/config-linux.json",
+    "src/scripts/.gitignore",
+    "src/scripts/go-dokify-downloader-darwin",
+    "src/scripts/go-dokify-darwin",
+    "src/scripts/plugins/bin-darwin/go-dokify-docker-0.0.4",
+    "src/scripts/plugins/bin-darwin/go-dokify-gcloud-0.0.2",
+    "src/scripts/plugins/bin-darwin/go-dokify-vault-0.0.2",
+    "src/scripts/plugins/bin-linux/go-dokify-docker-0.0.4",
+    "src/scripts/plugins/bin-linux/go-dokify-gcloud-0.0.2",
+    "src/scripts/plugins/bin-linux/go-dokify-vault-0.0.2"
+  ]
+}
