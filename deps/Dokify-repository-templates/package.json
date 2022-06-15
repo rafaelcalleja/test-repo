@@ -1,7 +1,0 @@
-{
- "name": "Dokify-repository-templates",
- "version": "0.0.76",
- "files": [
-  "src/pre-commit/.pre-commit-config.yaml"
- ]
-}
