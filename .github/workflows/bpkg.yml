@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '.bpkg.yml'
+      - 'deps/**'
   workflow_dispatch:
 
 jobs:
