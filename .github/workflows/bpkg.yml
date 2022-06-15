@@ -2,6 +2,8 @@ name: bpkg repository
 
 on:
   push:
+    paths:
+      - '.bpkg.yml'
   workflow_dispatch:
 
 jobs:
