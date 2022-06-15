@@ -1,6 +1,6 @@
 {
  "name": "rafaelcalleja-assert.sh",
- "version": "v1.2",
+ "version": "v1.1",
  "scripts": [
   "assert.sh"
  ]
