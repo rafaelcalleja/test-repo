@@ -10,7 +10,6 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     env:
-      GITHUB_OWNER: ${{ secrets.GH_USERNAME }}
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - name: Checkout code
